@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>задание 4</title>
+</head>
+<body>
+    <header>
+        <div class="header-item-1">
+            <span><a href="#">Movies</a></span>
+            <span><a href="#"></a>TV Shows</a></span>
+            <span><a href="#"></a>Documentaries</a></span>
+        </div>
+
+        <div class="logo-wrap"><a href="#"><img src="img/logo.png"></a></div>
+        
+        <div class="header-item-2">
+            <a href="#"><img src="img/search.png"></a>
+            <a href="#"><img src="img/bell.png"></a>
+            <a href="#"><span>Sign Up</span></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="description">
+            <h1>STAR WARS</h1>
+            <h2>THE RISE OF SKYWALKER</h2>
+            <span>The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.</span>
+
+            <div class="rating">
+                <a href="#"><img src="img/star.png"></a>
+                <a href="#"><img src="img/star.png"></a>
+                <a href="#"><img src="img/star.png"></a>
+                <a href="#"><img src="img/star.png"></a>
+                <a href="#"><img src="img/empty-star.png"></a>
+            </div>
+
+            <div class="buttons">
+                <a href="#">
+                    <div class="watch-btn">
+                        <img src="img/play-icon.png">
+                        <span>Watch Now</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="trailer-btn">
+                        <span>Trailer</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-btns">
+                    <img src="img/left.png" alt="prev" class="swiper-btn prev">
+                    <img src="img/right.png" alt="next" class="swiper-btn next">
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/slider-item-1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider-item-2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider-item-3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider-item-1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider-item-2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider-item-3.png" />
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 100,
+                depth: 200,
+                modifier: 3,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    
+}
+
+body {
+    background-image: url(img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}   
+
+a {
+    text-decoration: none;
+}
+
+
+/* header */
+
+header {
+    height: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-item-1 span:nth-child(2) {
+    margin: 0 40px;
+}
+
+.logo-wrap {
+    margin-right: 200px;
+}
+
+.header-item-2 img {
+    height: 20px;
+}
+
+.header-item-2 a:nth-child(2) {
+    margin: 0 32px;
+}
+
+
+/* body */
+
+.container {
+    margin: 50px 12%;
+    display: flex;
+}
+
+.description {
+    width: 550px;
+}
+
+.description h1 {
+    font-family: 'Oswald';
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 119px;
+    
+} 
+
+.description h2 {
+    font-family: 'Oswald';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 59px;
+
+}
+
+.description span {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.9;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+.rating {
+    margin: 30px 0;
+}
+
+.rating img {
+    height: 26px;
+    padding-right: 5px;
+}
+
+.buttons {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.watch-btn {
+    height: 60px;
+    width: 200px;
+    background: #FA4776;
+    border-radius: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-btn img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.trailer-btn {
+    height: 60px;
+    width: 120px;
+    border: 1px solid #FFFFFF;
+    border-radius: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* slider */
+
+.slider-container {
+    margin-left: 50px;
+}
+
+.swiper {
+    width: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    width: 270px;
+    height: 400px;
+}
+
+.swiper-slide img {
+    display: block;
+    border-radius: 16px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.swiper-btns {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.swiper-btn {
+    transition: .2s;
+    background-color: #FFFFFF;
+    padding: 9px 14px;
+    border-radius: 5px;
+}
+
+.swiper-btn:hover {
+    cursor: pointer;
+    transform: scale(.95);
+}
+
+.next {
+    margin-left: 20px;
+}
+
+.swiper-btns img {
+    width: 12px;
+    height: 24px;
+}
+
+
+
+@media screen and (max-width:1260px) {
+    .container {
+        margin: 50px 5%;
+    }
+    .description {
+        width: 100%;
+    }
+    .logo-wrap a img {
+        width: 150px;
+    }
+    .header-item-1 span:nth-child(2) {
+        margin: 0 5px;
+    }
+    .header-item-2 a:nth-child(2) {
+        margin: 0 5px;
+    }
+    .logo-wrap {
+        margin-right: 20px;
+    }
+    header {
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+    .description h1 {
+        font-size: 40px;
+        
+    } 
+    .description h2 {
+        font-size: 20px;
+    }
+    .description span {
+        font-size: 15px;
+    }
+    .trailer-btn {
+        height: 50px;
+        width: 100px;
+    }
+    .watch-btn {
+        height: 50px;
+        width: 150px;
+    }
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
